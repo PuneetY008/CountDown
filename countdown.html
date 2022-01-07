@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CountDown</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./countdown.css">
+    <script src="./bootstrap.min.js"></script>
+</head>
+<body>
+    <div id="container" class=" container-sm text-center d-flex flex-column align-items-center">
+        <h1>Countdown Timer</h1>
+        <h3>Set Timer Below</h3>
+
+        <div id="timer">
+            <h3><span id="sp-hr">00</span>:<span id="sp-min">00</span>:<span id="sp-sec">00</span></h3>
+        </div>
+
+        <div id="set" class="text-center d-flex justify-content-center">
+            <label for="hr">Hour-</label>
+            <input type="number" name="hr" id="hr" min="0" max="59">
+            <label for="min">Minutes-</label>
+            <input type="number" name="min" id="min" min="0" max="60">
+            <label for="sec">Seconds-</label>
+            <input type="number" name="sec" id="sec" min="0" max="60">
+        </div>
+
+        <button type="button" id="submit-btn" class="btn btn-primary">Start Timer</button>
+        <button type="button" id="reset" class="btn btn-outline-secondary">Reset</button>
+    </div>
+
+    <script src="./countdown.js"></script>
+</body>
+</html>
